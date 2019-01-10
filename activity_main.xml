@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SMS Implicit Intens"
+        android:padding="12dp"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:id="@+id/judul1"/>
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul1"
+        android:layout_gravity="center"
+        android:text="ACCESS SMS APP"
+        android:onClick="OpenMessage"/>
+
+    <TextView
+        android:id="@+id/judul2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SMS no Implicit"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittextSMS"
+        android:layout_gravity="center"
+        android:hint="Input SMS Text here"
+        android:inputType="text"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editphoneSMS"
+        android:layout_gravity="center"
+        android:hint="Input Phone Number here"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editphoneSMS"
+        android:layout_gravity="center"
+        android:text="SEND SMS"
+        android:onClick="SendingMessage"/>
+
+
+</LinearLayout>
